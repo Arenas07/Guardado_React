@@ -16,15 +16,20 @@ Este repositorio contiene el código fuente del frontend en React de **Habita**.
 
 ## 📦 Tecnologías utilizadas
 
-- ⚛️ React 18+
-- 🧭 React Router
-- 🧠 Context API
-- 🔗 Axios
-- 🎨 Tailwind CSS o CSS Modules
-- ⚡ Vite o Create React App
-- 🛡️ Supabase (autenticación y base de datos)
-- 🔔 Firebase (notificaciones push)
-- 🧬 Integración futura con Tavus y ElevenLabs
+Estas son las principales tecnologías y herramientas utilizadas en el desarrollo del frontend de **Habita**:
+
+- ⚛️ **React 18+** – Biblioteca principal para construir interfaces de usuario.
+- 🧭 **React Router** – Para el manejo de rutas y navegación.
+- 🧠 **Context API** – Gestión de estado global ligera.
+- 🔗 **Axios** – Cliente HTTP para consumo de APIs RESTful.
+- 🎨 **Tailwind CSS** o **CSS Modules** – Estilización de componentes.
+- ⚡ **Vite** o **Create React App** – Herramientas de desarrollo y bundling.
+- 📊 **Recharts** – Visualización de datos (gráficas de hábitos, estados emocionales).
+- 🛡️ **Supabase** – Backend-as-a-Service para autenticación y base de datos.
+- 🔔 **Firebase** – Envío de notificaciones push.
+- 🔧 **ESLint** – Linter para mantener buenas prácticas de código.
+- 🖌️ **Prettier** – Formateador de código automático.
+- 🧬 **Tavus** y **ElevenLabs** (en integración futura) – Herramientas de IA conversacional y voz.
 
 ------
 
