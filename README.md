@@ -30,43 +30,46 @@ Este repositorio contiene el código fuente del frontend en React de **Habita**.
 
 ## 📁 Estructura del proyecto (Clean Architecture)
 
-Organizamos el frontend en capas siguiendo principios de **Clean Architecture**, para mantener el código limpio, escalable y bien organizado 🧼.
+El frontend está organizado aplicando los principios de **Clean Architecture** 🧼, manteniendo separación de responsabilidades, escalabilidad y claridad de código.
 
 ```
-bashCopiarEditarhabita-react-frontend/
+perlCopiarEditarhabita-react-frontend/
 ├── public/
-│   └── index.html                      # 🌐 Punto de carga inicial
-├── src/
+│   └── index.html                  # 🌐 HTML base
+├── src/                            # 💻 Código fuente principal
+│   ├── presentation/              # 🎨 Interfaz visual
+│   │   ├── components/            # 🧩 Componentes atómicos y moleculares
+│   │   ├── layouts/               # 🧱 Estructuras reutilizables (Header, Footer)
+│   │   ├── pages/                 # 📄 Vistas principales (Inicio, CheckIn, Hábitos)
+│   │   └── App.jsx                # 🧠 Rutas y layout general
 │
-│   ├── presentation/                  # 🎨 UI y componentes visuales
-│   │   ├── components/                # 🧩 Componentes atómicos y moleculares
-│   │   ├── layouts/                   # 🧱 Estructuras reutilizables (Header, Footer)
-│   │   ├── pages/                     # 📄 Pantallas principales (Inicio, CheckIn, Hábitos)
-│   │   └── App.jsx                    # 🧠 Componente raíz y rutas
+│   ├── domain/                    # 🧠 Lógica del negocio
+│   │   ├── models/                # 🧬 Tipos y estructuras de datos
+│   │   └── usecases/             # 📚 Casos de uso (check-in, registro, etc.)
 │
-│   ├── domain/                        # 🧠 Lógica de negocio
-│   │   ├── models/                    # 🧬 Modelos y tipos (Usuario, Emoción, etc.)
-│   │   └── usecases/                 # 📚 Casos de uso (CheckIn, Registrar hábito, etc.)
+│   ├── infrastructure/           # 🌍 Comunicación externa
+│   │   ├── api/                   # 🔗 Axios y endpoints
+│   │   ├── supabase/              # 🔐 Autenticación y gestión con Supabase
+│   │   └── firebase/              # 🔔 Notificaciones push
 │
-│   ├── infrastructure/               # 🌐 Servicios externos
-│   │   ├── api/                       # 🌍 Configuración de Axios y endpoints
-│   │   ├── supabase/                  # 🔐 Cliente Supabase
-│   │   └── firebase/                  # 🔔 Notificaciones push
+│   ├── shared/                   # 🛠️ Código reutilizable
+│   │   ├── constants/            # 📌 Constantes globales
+│   │   ├── utils/                # 🧮 Funciones de utilidad
+│   │   ├── hooks/                # 🪝 Custom React Hooks
+│   │   └── context/              # 🧠 Estado global con Context API
 │
-│   ├── shared/                       # 🛠️ Recursos compartidos
-│   │   ├── constants/                # 🧾 Constantes (textos, colores)
-│   │   ├── utils/                    # 🧮 Funciones utilitarias
-│   │   ├── hooks/                    # 🪝 Custom Hooks
-│   │   └── context/                  # 🧠 Estados globales (auth, emociones)
-│
-│   └── main.jsx                      # 🚪 Punto de entrada principal
-│
-├── .env                              # 🔐 Variables de entorno
-├── package.json                      # 📦 Dependencias y scripts
-└── README.md                         # 📘 Documentación del proyecto
+├── .gitignore                     # 🚫 Archivos ignorados por Git
+├── .prettierrc                    # 🎨 Configuración de estilos con Prettier
+├── eslint.config.js               # 🧹 Reglas de linting
+├── index.html                     # 🌐 HTML raíz (en public o raíz según config)
+├── package.json                   # 📦 Dependencias y scripts
+├── package-lock.json              # 📑 Lock de dependencias
+├── README.md                      # 📘 Documentación del proyecto
+├── tsconfig.json                  # ⚙️ Configuración general de TypeScript
+├── tsconfig.app.json              # 🧩 Configuración específica para la app
+├── tsconfig.node.json             # 🖥️ Configuración específica para entorno Node
+├── vite.config.ts                 # ⚡ Configuración de Vite (bundler)
 ```
-
-------
 
 ### 🧠 Breve descripción de las capas:
 
