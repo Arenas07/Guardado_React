@@ -6,22 +6,26 @@
     --background-2: 245,245,245;
     --light-dark-container: 230,230,230;
     --light-green: 16,185,129;
-  }
+    --default-contrast: 0, 0, 0;
+    --contrast-hover: 55, 65, 81;
+}
   
-  .dark {
+.dark {
     --dark-green: 6,78,59;
     --background-1: 28,36,51;
     --background-2: 17,24,39;
     --light-dark-container: 31,41,55;
     --light-green: 52,211,153;
-  }
+    --default-contrast: 255, 255, 255;
+    --contrast-hover: 31, 41, 55;
+}
   
   
-  body {
-    background: rgba(var(--background-1));
-    color: rgba(var(--light-dark-container));
-  }
-  
+body {
+  background: rgba(var(--background-1));
+  color: rgba(var(--light-dark-container));
+}
+
 
 
 @media (prefers-color-scheme: dark){
@@ -34,5 +38,6 @@
     --light-dark-container: 31,41,55;
 
     --light-green: 52,211,153;
+    --default-contrast: 255, 255, 255;
     }
 }
