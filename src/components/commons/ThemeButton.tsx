@@ -2,18 +2,16 @@ import { useEffect, useState } from "react";
 import { IoMoonOutline } from "react-icons/io5";
 import { MdSunny } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
+import '../../styles/global.css'
 
 function ThemeButton() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    const root = document.documentElement;
-    if (isDarkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
+    const html = document.documentElement;
+    html.classList.toggle('dark', isDarkMode);
   }, [isDarkMode]);
+  
   
 
   const toggleTheme = () => {
@@ -23,7 +21,7 @@ function ThemeButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded transition-all duration-300 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="p-2 rounded transition-all duration-300 cursor-pointer"
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDarkMode ? (
@@ -34,7 +32,7 @@ function ThemeButton() {
             exit={{ opacity: 0, scale: 1.2 }}
             transition={{ duration: 0.3 }}
           >
-            <MdSunny size={24} className="text-white hover:text-green-300" />
+            <MdSunny size={24} className="w-full text-white hover:text-green-300" />
           </motion.div>
         ) : (
           <motion.div
@@ -44,7 +42,7 @@ function ThemeButton() {
             exit={{ opacity: 0, scale: 1.2 }}
             transition={{ duration: 0.3 }}
           >
-            <IoMoonOutline size={24} className="text-gray-800 hover:text-green-600" />
+            <IoMoonOutline size={24} className="w-full text-gray-800 hover:text-green-600" />
           </motion.div>
         )}
       </AnimatePresence>
