@@ -24,6 +24,7 @@
 body {
   background: rgba(var(--background-1));
   color: rgba(var(--light-dark-container));
+  overflow-x: hidden;
 }
 
 

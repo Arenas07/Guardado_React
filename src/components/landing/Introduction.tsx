@@ -21,7 +21,7 @@ function Introduction(){
                     <div className='flex flex-col '>
                         <h1 className='text-white text-4xl font-bold sm:text-5xl md:text-6xl animate-fade-in-up'>
                             Your digital space for  
-                            <span className='text-green-500'> emotional wellbeing</span> <br />
+                            <span className='text-emerald-700 dark:text-emerald-300'> emotional wellbeing</span> <br />
                             and personal productivity
                         </h1>
 
@@ -35,7 +35,7 @@ function Introduction(){
                         </h3>
                     </div>
 
-                    
+
                     <div className='mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0'>
                 <div className='flex flex-col sm:flex-row gap-4'>
                     <Link
