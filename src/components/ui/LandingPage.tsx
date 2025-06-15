@@ -1,6 +1,7 @@
 import Header from '../landing/Header.tsx'
 import Introduction from '../landing/Introduction.tsx';
 import Features from '../landing/Features.tsx'
+import HowItWorks from '../landing/HowItWorks.tsx';
 import '../../styles/global.css';
 import '../../styles/index.css';
 
@@ -11,6 +12,7 @@ function LandingPage() {
       <Header />
       <Introduction />
       <Features />
+      <HowItWorks />
     </>
   )
 }
