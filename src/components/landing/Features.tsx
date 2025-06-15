@@ -45,7 +45,7 @@ const features = [
 
 function Features() {
   return (
-    <section className='flex flex-wrap justify-center  gap-6 px-4 bg-[rgb(var(--background-2))]'>
+    <section className='flex flex-wrap justify-center w-lvw gap-6 px-4 bg-[rgb(var(--background-2))]'>
       <div className='w-full flex flex-col gap-4 text-center mb-10 mt-10'>
         <h2 className='text-5xl leading-tight font-bold bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 bg-clip-text text-transparent w-full'>
           Everything you need for your daily well-being
