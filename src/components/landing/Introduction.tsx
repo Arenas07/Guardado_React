@@ -5,7 +5,7 @@ import CheckInEmotional from '../commons/CheckInTemplate'
 function Introduction(){
     return(
     <>
-        <section className='flex pt-10 mx-10 flex-row items-center w-full'
+        <section className='flex pt-10 mx-10 flex-row items-center w-full pb-10'
         style={{
                 backgroundImage: `linear-gradient(135deg, rgb(var(--background-1)) 0%, rgb(var(--background-1)) 40%, rgb(var(--background-2)) 100%)`
         }}>
