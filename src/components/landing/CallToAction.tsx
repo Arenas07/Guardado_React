@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import { CiHeart } from "react-icons/ci";
 import { FaMicrophone, FaArrowRight } from "react-icons/fa";
 import { MdOutlineSmartphone } from "react-icons/md";
-
+import { Element } from 'react-scroll';
 
 function CallToAction(){
     return(
+
+      <Element name="callToAction">
         <section className='py-20 bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-600 relative overflow-hidden'>
             
       
@@ -78,6 +80,7 @@ function CallToAction(){
           </div>
         </div>
         </section>
+      </Element>
     )
 }
 

@@ -5,48 +5,48 @@ import { AiOutlineRise } from "react-icons/ai";
 import { LuZap } from "react-icons/lu";
 import { IoShieldOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
-
+import { Element } from 'react-scroll';
 
 const steps = [
 {
     icon: <MdVerifiedUser className="w-8 h-8" />,
-    title: 'Verificación de Red de Apoyo',
-    description: 'Confirma que tienes al menos una persona de apoyo en tus contactos de emergencia. Tu bienestar es nuestra prioridad.',
+    title: 'Support Network Verification',
+    description: 'Confirm that you have at least one support person in your emergency contacts. Your well-being is our priority.',
     color: 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400',
     gradient: 'from-blue-500 to-cyan-500'
 },
 {
     icon: <CiHeart className="w-8 h-8" />,
-    title: 'Bienvenida Personalizada',
-    description: 'Cada mañana, tu avatar IA te saluda con un mensaje adaptado a tu patrón emocional de los últimos días.',
+    title: 'Personalized Welcome',
+    description: 'Every morning, your AI avatar greets you with a message tailored to your emotional pattern of the past few days.',
     color: 'bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400',
     gradient: 'from-emerald-500 to-green-500'
 },
 {
     icon: <AiOutlineRise className="w-8 h-8" />,
-    title: 'Check-in Emocional por Voz',
-    description: 'Habla con tu compañero emocional sobre cómo te sientes. La IA te ayuda a nombrar emociones sin juzgar.',
+    title: 'Emotional Voice Check-in',
+    description: 'Talk to your emotional partner about how you feel. AI helps you name emotions without judgment.',
     color: 'bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400',
     gradient: 'from-purple-500 to-pink-500'
 },
 {
     icon: <LuZap className="w-8 h-8" />,
-    title: 'Prácticas de Autocuidado',
-    description: 'Elige una práctica diaria: respiración, gratitud, caminata mindful. Todo guiado por voz, sin complicaciones.',
+    title: 'Self-care practices',
+    description: 'Choose a daily practice: breathing, gratitude, mindful walking. All guided by voice, without complications.',
     color: 'bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400',
     gradient: 'from-orange-500 to-red-500'
 },
 {
     icon: <IoShieldOutline className="w-8 h-8" />,
-    title: 'Seguimiento Inteligente',
-    description: 'Registra hábitos saludables y recibe alertas automáticas si detectamos patrones que requieren atención.',
+    title: 'Intelligent Tracking',
+    description: 'It records healthy habits and receives automatic alerts if we detect patterns that require attention.',
     color: 'bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400',
     gradient: 'from-yellow-500 to-orange-500'
 },
 {
     icon: <FaUsers className="w-8 h-8" />,
-    title: 'Conecta y Crece',
-    description: 'Únete a comunidades de bienestar, comparte historias reales y accede a profesionales certificados.',
+    title: 'Connect and Grow',
+    description: 'Join wellness communities, share real stories and access certified professionals.',
     color: 'bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-400',
     gradient: 'from-teal-500 to-blue-500'
   },
@@ -54,6 +54,7 @@ const steps = [
 
 function HowItWorks() {
   return (
+  <Element name="howItWorks">
     <section className="py-20 px-6 md:px-12">
         <div className="w-full text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">How Habita works</h2>
@@ -94,6 +95,7 @@ function HowItWorks() {
 
 
     </section>
+  </Element>
   );
 }
 
